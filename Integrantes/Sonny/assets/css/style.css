@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box ;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+.body-principal{
+    background: url(../img/image.jpg) no-repeat center top;
+    background-size: cover;
+}
+/* PAGINA PRINCIPAL */
+.header{
+    height: 115px;
+    display: flex;
+    background-color: #2b2b2b;
+    margin: 20px;
+    border-radius: 15px;
+    opacity: 0.8;
+}
+.img-menu{
+    margin: auto;
+    margin-left: 20px;
+}
+.img-menu img{
+    width: 190px;
+}
+
+.menu{
+    margin-right: 20px;
+}
+
+.menu ul{
+    list-style: none;
+    display: flex;
+}
+
+.menu ul li{
+    margin: 15px;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: #ffce00;
+    padding: 30px;
+    display: block;
+    font-weight: bold;
+}
+
+.menu ul li a:hover{
+    color: #7eba4a;
+}
+.contenedor-sesion{
+    display: flex;
+}
+
+.icono-sesion{
+    margin-right: 8px;
+}
+.mensaje-principal {
+    place-items: center;
+    min-height: 10vh;
+    display: grid;
+}
+
+.titulo p{
+    color: #ffce00;
+    font-size: 3rem;
+    border-right: .15em solid #ffce00;
+    animation: blink 1s steps(1) infinite;
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 4s steps(38) 1s 1 normal both, blink 1s steps(1) infinite;
+}
+@keyframes blink {
+    50%{
+        border-color: transparent;
+    }
+}
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+.card-principal{
+    padding: 90px;
+    margin: auto;
+}
+.texto-principal {
+    width: 500px;
+    margin-bottom: 20px;
+}
+.texto-principal p {
+    font-size: 30px;
+}
+.boton-principal{
+    box-shadow:  0px 0px 12px #262628,
+    -6px -6px 25px #ffffff;
+    background: #6BB62D;
+    color: #ffffff;
+    border-radius: 10px;
+    width: 280px;
+    text-align: center;
+    padding: 10px;
+}
+/* MAIN */
+
+/* QUIENES SOMOS MAIN*/
+
+.body-quienes{
+    background-color: #E8E8E8;
+}
+
+main h1{
+    text-align: center;
+    color: #80CD4E;
+    font-family: Aleo;
+    font-size: 38px;
+}
+
+.descripcion-quienes{
+    background-color: #fff;
+    width: 85%;
+    margin: auto;
+    margin-top: 25px;
+    padding: 20px 60px;
+}
+
+main div img{
+    width: 85%;
+    margin: auto;
+    margin-left: 100px;
+
+}
+
+.objetivos-quienes{
+    background-color: #fff;
+    width: 85%;
+    margin: auto;
+    padding: 20px 60px;
+}
+
+main div h3{
+    font-size: 21px;
+    color: #616161;
+}
+
+main div h4{
+    font-size: 20px;
+    color: #616161;
+}
+
+main div p{
+    font-size: 16px;
+    color: #616161;
+}
+
+/* IMGENES-QUIENES SOMOS */
+.container{
+    margin: auto;
+    background-color: white;
+    width: 1147px;
+    margin: 6px 101px;
+
+  }
+  
+  ul, li {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+  }
+  
+  ul.slider{
+    position: relative;
+    width: 1147px;
+    height: 500px;
+  }
+  
+  ul.slider li {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      opacity: 0;
+      width: inherit;
+      height: inherit;
+      transition: opacity .5s;
+      background:#fff;
+  }
+  
+  ul.slider li img{
+    width: 1147px;
+    height: 500px;
+margin: auto;
+  }
+  
+  ul.slider li:first-child {
+      opacity: 1; /*Mostramos el primer <li>*/
+  }
+  
+  ul.slider li:target {
+      opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
+  }
+  .menu-img{
+    text-align: center;
+    margin: 5px;
+  }
+  
+  .menu-img li{
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .menu-img li a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: grey;
+    padding: 6px;
+    width: 30px;
+    height: 30px;
+    font-size: 17px;
+    border-radius: 100%;
+  }
+
+  .menu-img li a:hover{
+      background: #fff;
+      color: #000;
+      border: solid 2px darkgray;
+  }
